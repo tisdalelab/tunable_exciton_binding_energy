@@ -1,0 +1,15 @@
+This code is used to fit the 0.5 equivalent TCBQ sample.
+
+Files:
+  fit_Q4_MCMC.m - Main script used to do the fitting
+  gwmcmc.m - MCMC implementation from Aslak Grinsted (https://github.com/grinsted/gwmcmc) based on Goodman and Weare (2010). Additional information found at https://www.mathworks.com/matlabcentral/fileexchange/49820-ensemble-mcmc-sampler.
+  define_model_Q4.m - MATLAB function containing model functions
+  piecewiseGL.m - Function for a combined Gaussian-Lorentzian
+  plot_MCMC_output.m - Plotting function
+  get_initial_walkers.m - Initialize MCMC walkers
+  get_restart_walkers.m - Initialize MCMC walkers from the preliminary run prior to production data
+  makelogprior.m - Function to create the log-prior function (bounds)
+  parameter_statistics.m - Function to generate statistics from the production data
+  Q4_AllT_A.csv - Absorbance data
+  Q4_AllT_T.csv - Temperature of each spectrum
+  Q4_AllT_x.csv - Wavelengths
